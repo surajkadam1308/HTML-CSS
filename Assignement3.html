@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>assigiment2</title>
+    <style>
+        #a {
+            background-color: rgb(60, 60, 211);
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+
+        .lable {
+            margin-left: 60px;
+
+        }
+
+        #Main {
+            margin-left: 20%;
+            border: ridge;
+            width: 55%;
+        }
+
+        .button {
+            margin-left:22%;
+            width: 61%;
+            background: rgb(6, 114, 236);
+            border: none;
+            color: white;
+            text-size-adjust: 20px;
+            border-radius: 4px;
+        }
+
+        #size {
+            width: 154px;
+        }
+
+        .border {
+            border: ridge;
+        }
+    </style>
+</head>
+<body>
+    <div id="Main">
+        <header id="a">
+            Registion Form
+        </header> <br>
+        <div style="display :flex ;margin-left:40px; ">
+            <div class="lable">
+                <lable>Frist Name </lable> <br>
+                <input type="text" size="18px" class="border">
+            </div>
+            <div class="lable">
+                <lable>Last Name </lable> <br>
+                <input type="text" size="18px" class="border">
+            </div> <br>
+        </div>
+        <div style="display:flex;margin-left:40px ;">
+            <div class="lable"> <br>
+                <lable> Email Address </lable> <br>
+                <input text="Email" size="50px" class="border">
+            </div>
+        </div>
+        <div style="display:flex;margin-left:40px ;">
+            <div class="lable"> <br>
+                <lable>Phone number</lable> <br>
+                <input Text="number" size="50px" class="border"><br> <br>
+            </div>
+        </div>
+        <div style="display :flex ;margin-left: 40px;  ">
+            <div class="lable">
+                <lable> City </lable> <br>
+                <select id="size" class="border">
+                    <option>Lonad</option>
+                    <option>Nanded</option>
+                    <option>Nagpur</option>
+                    <option>Akola</option>
+                </select>
+            </div>
+            <div class="lable" style="margin-right:80% ;">
+                <lable>country </lable> <br>
+                <select id="size" class="border">
+                    <option>India</option>
+                    <option>China</option>
+                    <option>japan</option>
+                    <option>America</option>
+                </select>
+            </div> <br>
+        </div>
+        <div id="button"> <br>
+            <input type="button" class="button" value=" Get Started ">
+        </div> <br>
+    </div>
+</body>
+</html>

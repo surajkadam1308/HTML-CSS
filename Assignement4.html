@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignement 4 </title>
+        <style>
+            .main{
+              background-color: rgba(11, 238, 121, 0.708);
+              padding-top: 60px;
+              padding-left: 300px;
+              
+            }
+           
+            .sub{
+              width:55%;
+              height:300px;
+              background-color:white;
+              text-align: center;
+              padding-top: 20px;
+              
+            }
+            .box{
+                border:ridge;
+                width:225px;
+             
+            }
+            .button{
+               color: brown;
+               width:225px;
+               background-color: aquamarine;
+            }
+           #last{
+              font-size:10px;
+            }
+       </style>
+    </head>
+    <body class="main">
+          <div class="sub">
+            <p> <b> LOGIN </b> </p>
+            <p>plase enter your credentials to login. </p>
+            <input type="text" placeholder="username" class="box"> <br> <br>
+            <input type="text" placeholder="password" class="box">  <br> <br>
+            <input type="button" value="LOGIN" class="button" id="button" onclick="button()">
+            <P id="last"> Not registered ?  <a href="">create an accont</a></P>
+          </div>
+          <script>
+             function button() {
+                alert("sucess");
+              }
+              button();
+          </script>
+    </body>
+</html>

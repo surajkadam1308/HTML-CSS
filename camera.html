@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camera</title>
+    <style>
+        
+        .video{
+            width: 100%;
+            height: 200px;
+        
+            
+        }
+        .button{
+          al
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+         <video id="video" autoplay class="video"></video>
+        </div>
+         <button onclick="opencamera()" class="button">open camera </button>
+   
+    <script>
+       async function opencamera(){
+        const stream=await navigator.mediaDevices.getUserMedia({video:true});
+        video.srcObject =stream;
+       }
+    </script>
+</body>
+</html>
