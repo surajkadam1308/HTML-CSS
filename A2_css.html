@@ -5,19 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignement 2</title>
     <style>
+      .main_d{
+        display: flex;
+        justify-content: center;
+        
+        
+      }
       .first_div{
         width: 303px;
-        background-color: beige;
+        height: 290px;
+        background-color: #fdffff;
         padding-left: 20px;
         padding-right: 20px;
+        border-bottom: #e4eafa 22px solid;
+        border-left: #e4eafa 22px solid;
+        border-right: #e4eafa 22px solid;
+       
       }
       #heding{
         text-align: center;
         color: white;
         font-size:x-large;
        width: 340px;
-        background-color: rgb(95, 156, 196);
+        background-color: #125780;
         padding: 2px;
+        border-top: #e4eafa 22px solid;
+        border-left: #e4eafa 22px solid;
+        border-right: #e4eafa 22px solid;
       }
      .main_div{
       display: flex;
@@ -25,20 +39,25 @@
      }
      .input{
       padding-right: 30px;
+     
+      
      }
      .select_div{
       display: flex;
       padding-right: 60px;
      }
      .select_otp{
-      padding-right: 99px;
+      padding-right: 50px;
+     }
+     select{
+      width:126px;
      }
      #button{
       width: 50px;
       color: white;
       text-align: center;
       width: 303px;
-      background-color: aqua;
+      background-color: #2d94d6;
       border: none;
       height: 30px;
 
@@ -46,20 +65,22 @@
     </style>
 </head>
 <body>
+  <div class="main_d">
       <form action="">
          <div id="heding">Registion Form</div>
         <div class="first_div">
 
        
        
-        <div class="main_div"> 
+        <div class="main_div">
+         
+          <div class="input"><br>
           
-          <div class="input">
-            <label for="">First name</label> <br>
+            <label for="">First name</label>
             <input type="text" size="15">
-          </div> <br>
-           <div >
-            <label for="">Last name</label> <br>
+          </div>
+           <div ><br>
+            <label for="">Last name</label> 
             <input type="text" size="15">
            </div>
         </div> <br>
@@ -94,5 +115,6 @@
         
       </div>
       </form>
+    </div>
 </body>
 </html>
