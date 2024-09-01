@@ -21,16 +21,19 @@
     width: 100%;
     max-width: 400px;
     margin: auto;
-       
-
+    border-width: 80px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, #3a65ce, #9b4479) 1 ;
+   
 }
 
 .login-box {
     background: #fff;
-   
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     text-align: center;
+}
+h2{
+    padding-top:25px;
 }
 .form{
     padding: 40px;
@@ -61,22 +64,28 @@
 
 .forgot-password {
     margin-bottom: 20px;
+    text-align: start;
+    
+    
+
 }
 
 .forgot-password a {
-    color: #2575fc;
+    color: #333;
     text-decoration: none;
+   
+    
 }
 
 .btn {
     width: 100%;
     padding: 10px;
-    background: #2575fc;
-    border: none;
-    border-radius: 5px;
-    color: white;
+    background:white;
+    border-radius:50px;
+    color:black;
     font-size: 16px;
     cursor: pointer;
+    
 }
 
 .signup-link {
@@ -104,7 +113,7 @@
                     <input type="password" placeholder="Password" name="password" required>
                 </div>
                 <div class="forgot-password">
-                    <a href="#">Forget Password?</a>
+                   <p> <a href="#">Forget Password?</a></p>
                 </div>
                 <button type="submit" class="btn">Login</button>
                 <div class="signup-link">
