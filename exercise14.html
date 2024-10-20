@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rotate effect for the image on hover</title>
+    <style>
+        .hover-rotate{
+            overflow:hidden;
+            margin:8px;
+            min-width:240px;
+            max-width:320px;
+            width:100%;
+        }
+        .hover-rotate img{
+            transition : all 0.3s;
+            box-sizing:border-box;
+            max-width: 100%;
+        }
+        .hover-rotate:hover img{
+            transform:scale(1.3) rotate(5deg);
+        }
+    </style>
 </head>
 <body>
-    
+   <figure class="hover-rotate">
+        <img src="https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/flower-2.jpeg" alt="img" height="100" width="100">
+   </figure> 
 </body>
 </html>
