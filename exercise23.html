@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creates an input with a visual, non-editable prefix.</title>
+    <style>
+        input{
+            border: none;
+            font-weight: 300;
+             font-size: 14px;
+             color: #999;
+        }
+        .input-box{
+            max-width: 300px;
+            border: 1px solid #a0a0a0;
+            border-radius: 4px;
+            padding-left: 0.5rem;
+            padding: 0.5rem;
+
+
+        }
+         .input-box .prefix {
+             font-weight: 300;
+             font-size: 14px;
+             color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-box">
+         <span class="prefix">+91</span>
+         <input type="tel" placeholder="254 254 1111">
+    </div>
+</body>
+</html>
