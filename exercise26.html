@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>applies styles to an element when in fullscreen mode</title>
+    <style> 
+    .maindiv{
+        border: 1px solid #cccfdb;
+        margin: 40px auto;
+        border-radius: 700px;
+     }
+     
+     
+     .element {
+       padding: 20px;
+       height: 300px;
+       width: 100%;
+       background-color: orange;
+       box-sizing: border-box;
+     }
+     
+     .element p {
+       text-align: center;
+       color: white;
+       font-size: 3em;
+     }
+     
+     .element:-ms-fullscreen p {
+       visibility: visible;
+     }
+     
+     .element:fullscreen {
+       background-color: #CC56FF;
+       width: 100vw;
+       height: 100vh;
+     }
+     </style>
+</head>
+<body>
+    <div class="maindiv">
+        <p><em>Click the button below to enter the element into fullscreen mode. </em></p>
+        <div class="element" id="element"><p>Display change color in fullscreen mode!</p></div>
+        <br />
+        <button onclick="var el = document.getElementById('element'); el.requestFullscreen();">
+          Go Full Screen!
+        </button>
+    </div>
+</body>
+</html>
