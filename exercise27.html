@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu animations which transitions to a cross button on hover</title>
+    <style>
+        .menu{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            height: 2.5rem;
+            width: 2.5rem;
+            cursor:pointer;
+        }
+        .bar{
+        height: 5px;
+        background: orange;
+        border-radius: 5px;
+        margin:3px 0px;
+        transform-origin: left;
+        transition: all 0.5s;
+        }
+        .menu:hover .top-bar{
+                transform:rotate(45deg);
+        }
+        .menu:hover .middle-bar{
+            opacity:0;
+        }
+        .menu:hover .bottom-bar{
+            transform:rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class=" bar top-bar"></div>
+        <div class="bar middle-bar"></div>
+        <div class=" bar bottom-bar"></div>
+    </div>
+</body>
+</html>
