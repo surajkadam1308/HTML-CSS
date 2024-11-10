@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive popout menu on hover/focus</title>
+    <style>
+        .reference{
+            position:relative;
+            background-color:#cc56FF ;
+            width:100px;
+            height: 80px;
+        }
+        .popout-menu{
+            position:absolute;
+            visibility:hidden;
+            left:100%;
+            background-color: #FF89CC;
+            color: white;
+            padding: 16px;
+        }
+        .reference:hover > .popout-menu,
+        .reference:focus > .popout-menu,
+        .reference:focus-within > .popout-menu {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="reference" tabindex="0">
+        <div class="popout-menu">display popout menu</div>
+    </div>
+</body>
+</html>
