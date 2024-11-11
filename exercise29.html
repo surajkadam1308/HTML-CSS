@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fades out the siblings of a hovered item</title>
+    <style>
+        span{
+            padding:0 16px;
+            transition:opacity 0.3s;
+        }
+        .main-div:hover span:not(:hover){
+                opacity:0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+<span>case 1</span> <span>case 2</span> <span>case 3</span>
+    </div>
+</body>
+</html>
