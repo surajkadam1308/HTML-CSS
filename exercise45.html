@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> responsive layout with a content area and a sidebar.</title>
+  <style>
+    .container {
+    display: grid;
+    grid-template-columns: 1fr minmax(25%, 150px);
+    height: 100px;
+    }
+
+    main, aside {
+    padding: 12px;
+    text-align: center;
+    }
+
+    main {
+    background: #cc87ff;
+    }
+
+    aside {
+    background: #ff78cc;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <main>
+    predrag.com
+  </main>
+  <aside>
+    Max: 25% / Min: 150px
+  </aside>
+</div>
+</body>
+</html>
