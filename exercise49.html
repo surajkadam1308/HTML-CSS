@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hides an element completely (visually and positionally) in the DOM while still allowing it to be accessible</title>
+    <style>
+        .name {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        }
+    </style>
+</head>
+<body>
+    <a class="button" href="https://predragsystem.in/">
+        More about <span class="name">predragsystem.com</span>
+    </a>
+</body>
+</html>
