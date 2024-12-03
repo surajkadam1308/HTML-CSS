@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> truncates text that is longer than one line</title>
+  <style>
+    .truncate-text-multiline {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    height: 109.2px;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 1.4;
+    width: 400px;
+    background: #f5f6f9;
+    color: #333;
+    }
+
+    .truncate-text-multiline:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 36.4px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #f5f6f9 50%);
+    }
+  </style>
+</head>
+<body>
+<p class="truncate-text-multiline">
+    The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+  The quick brown fox jumps over the lazy dog.
+</p>
+</body>
+</html>
