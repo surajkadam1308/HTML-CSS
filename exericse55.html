@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> creates a zoom in zoom out animation</title>
+  <style>
+    .zoom-in-out-box {
+    margin: 24px;
+    width: 70px;
+    height: 70px;
+    background: #f500cc;
+    animation: zoom-in-zoom-out 1s ease infinite;
+    }
+
+    @keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.5, 1.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+    }
+  </style>
+</head>
+<body>
+<div class="zoom-in-out-box">PreDrag</div>
+</body>
+</html>
